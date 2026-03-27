@@ -1,0 +1,19 @@
+name: spark
+
+on:
+  push:
+
+jobs:
+  memory:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        champion: ["settle", "change", "June", "objective", "automobile"]
+        client: ["retreat", "oppose", "monument", "worthless"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java --enable-native-access=ALL-UNNAMED -jar Zf.jar
